@@ -70,3 +70,23 @@ Given more time, what improvements, if any, would you make to your code? Please 
 ## Submitting
 
 When you’re ready to submit, upload the repository to Github and share it with us!
+
+## Implementation
+
+### Installing dependencies
+
+    pip install -r requirements.txt
+
+### Running tests
+
+Test can be run using `nose2` from the top level of the repo, including a code#
+quality check using `pylint`:
+
+    pylint wedding_lister.py test_wedding_lister.py model.py && nose2
+
+### Running the web app
+
+    python wedding_lister.py
+
+The `sqlite3` database will be stored in as a file `database.db` in the repo
+root. By default the web app is available from port `5000`.
